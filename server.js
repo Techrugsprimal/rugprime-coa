@@ -1,3 +1,6 @@
+const PORT = process.env.PORT || 3000;
+
+
 // Function to Generate C.O.A. PDF (Upgraded Design)
 async function generatePDF(customerName, productName, editionNumber, editionTotal, imageUrl, purchaseDate) {
     const browser = await puppeteer.launch();
